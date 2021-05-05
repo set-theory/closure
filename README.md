@@ -4,12 +4,15 @@
 Set closure for JavaScript.
 See [docs](https://set-theory.github.io/closure/index.html).
 
-> :building_construction: Caveat emptor! This is work in progress. Code may be
-> working. Documentation may be present. Coherence may be. Maybe.
-
 > :warning: Depending on your environment, the code may require
 > `regeneratorRuntime` to be defined, for instance by importing
 > [regenerator-runtime/runtime](https://www.npmjs.com/package/regenerator-runtime).
+
+
+```js
+import {closure} from '@set-theory/closure';
+closure( x => x + 1 , 0 ) ; // 0 1 2 3 ...
+```
 
 [![License](https://img.shields.io/github/license/set-theory/closure.svg)](https://raw.githubusercontent.com/set-theory/closure/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@set-theory/closure.svg)](https://www.npmjs.org/package/@set-theory/closure)
