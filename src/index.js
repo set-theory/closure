@@ -1,1 +1,1 @@
-export {default as closure} from './closure.js';
+export {default as singletonUnderUnaryOperator} from './singletonUnderUnaryOperator.js';

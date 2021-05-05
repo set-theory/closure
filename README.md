@@ -10,8 +10,8 @@ See [docs](https://set-theory.github.io/closure/index.html).
 
 
 ```js
-import {closure} from '@set-theory/closure';
-closure( x => x + 1 , 0 ) ; // 0 1 2 3 ...
+import {singletonUnderUnaryOperator} from '@set-theory/closure';
+singletonUnderUnaryOperator( x => x + 1 , 0 ) ; // 0 1 2 3 ...
 ```
 
 [![License](https://img.shields.io/github/license/set-theory/closure.svg)](https://raw.githubusercontent.com/set-theory/closure/main/LICENSE)

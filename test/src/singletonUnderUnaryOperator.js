@@ -4,7 +4,7 @@ import {list} from '@iterable-iterator/list';
 import {enumerate} from '@iterable-iterator/zip';
 import {takewhile} from '@iterable-iterator/slice';
 
-import {closure} from '../../src/index.js';
+import {singletonUnderUnaryOperator} from '../../src/index.js';
 
 // https://oeis.org/A006577
 const Collatz = (x) => (x % 2 === 1 ? 3 * x + 1 : Math.floor(x / 2));
@@ -85,12 +85,14 @@ const A006577 = [
 ];
 
 function macro(t, n, a) {
-	const sequence = list(takewhile((x) => x !== 1, closure(Collatz, n)));
+	const sequence = list(
+		takewhile((x) => x !== 1, singletonUnderUnaryOperator(Collatz, n)),
+	);
 
 	t.is(sequence.length, a);
 }
 
-macro.title = (_, n, a) => `closure [A006577] > a(${n}) = ${a}`;
+macro.title = (_, n, a) => `[A006577] > a(${n}) = ${a}`;
 
 for (const [n, a] of enumerate(A006577, 1)) {
 	test(macro, n, a);
