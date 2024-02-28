@@ -4,7 +4,7 @@ import {list} from '@iterable-iterator/list';
 import {enumerate} from '@iterable-iterator/zip';
 import {takewhile} from '@iterable-iterator/slice';
 
-import {singletonUnderUnaryOperator} from '../../src/index.js';
+import {singletonUnderUnaryOperator} from '#module';
 
 // https://oeis.org/A006577
 const Collatz = (x) => (x % 2 === 1 ? 3 * x + 1 : Math.floor(x / 2));

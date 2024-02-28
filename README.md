@@ -16,7 +16,7 @@ singletonUnderUnaryOperator( x => x + 1 , 0 ) ; // 0 1 2 3 ...
 
 [![License](https://img.shields.io/github/license/set-theory/closure.svg)](https://raw.githubusercontent.com/set-theory/closure/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@set-theory/closure.svg)](https://www.npmjs.org/package/@set-theory/closure)
-[![Tests](https://img.shields.io/github/workflow/status/set-theory/closure/ci:cover?event=push&label=tests)](https://github.com/set-theory/closure/actions/workflows/ci:cover.yml?query=branch:main)
+[![Tests](https://img.shields.io/github/workflow/status/set-theory/closure/ci?event=push&label=tests)](https://github.com/set-theory/closure/actions/workflows/ci.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/librariesio/github/set-theory/closure.svg)](https://github.com/set-theory/closure/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/set-theory/closure.svg)](https://github.com/set-theory/closure/issues)
 [![Downloads](https://img.shields.io/npm/dm/@set-theory/closure.svg)](https://www.npmjs.org/package/@set-theory/closure)
