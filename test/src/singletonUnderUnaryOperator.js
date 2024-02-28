@@ -1,8 +1,8 @@
 import test from 'ava';
 
 import {list} from '@iterable-iterator/list';
-import {enumerate} from '@iterable-iterator/zip';
 import {takewhile} from '@iterable-iterator/slice';
+import {enumerate} from '@iterable-iterator/zip';
 
 import {singletonUnderUnaryOperator} from '#module';
 
